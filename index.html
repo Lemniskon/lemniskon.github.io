@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Children of Yost</title>
+	<!-- Link CSS Stylesheet -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Link Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstapcdn.com/
+	bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+
+	<!-- Link JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="
+	anonymous"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script> 
+
+	<script src="https://stackpath.bootstraphcdn.com/bootstrap/4.3.1/js/
+	bootstrap.min.js" crossorigin="anonymous"></script>
+
+	<!-- Link Font Awesome stylesheet CDN -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/
+	font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<!---------------------- HEADER SECTIONS ---------------------->
+		<section id="header">
+			<div class="container text-center">
+				<div class="user-box">
+					<!---- INSERT COY IMAGE --->
+					<img src="img/coy.jpg">
+					<h1>Children of Yost</h1>
+					<p>The Best Student Section</p>
+					<p>Next Game: U.S. NTDP U-18 TEAM (EX)</p>
+					<p id="demo"></p>
+	<script>
+		var countDownDate = new Date("Jan 25, 2020 19:30:00").getTime();
+		// update every second
+		var x = setInterval(function() {
+			var now = new Date().getTime();
+			var distance = countDownDate - now;
+
+			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+			document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  				+ minutes + "m " + seconds + "s ";
+
+			// If countdown is finished, write text
+			if (distance < 0){
+				clearInterval(x);
+				document.getElementById("demo").innterHTML = "PLAYING NOW";
+			}
+			// Display the result
+		}, 1000);
+	</script>
+				</div>
+			</div>
+
+			<div class="scroll-btn">
+				<div class="scroll-bar"><a href=""><span></span></a></div>
+			</div>
+		</section>
+
+	<section id="coy-info">
+		<div class="nav-bar">
+			<nav class="navbar navbar-expand-lg">
+				
+
+			</nav>
+
+		</div>
+
+	</section>
+
+	<!-- TEST TIMER -->
+<!--	<section id="ct_down">
+	<p id="demo"></p>
+	<script>
+		var countDownDate = new Date("Jan 1, 2020 00:00:00").getTime();
+		// update every second
+		var x = setInterval(function() {
+			var now = new Date().getTime();
+			var distance = countDownDate - now;
+
+			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+			document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  				+ minutes + "m " + seconds + "s ";
+
+			// If countdown is finished, write text
+			if (distance < 0){
+				clearInterval(x);
+				document.getElementById("demo").innterHTML = "PLAYING NOW";
+			}
+			// Display the result
+		}, 1000);
+	</script>
+</section>-->
+</body>
+</html>

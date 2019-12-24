@@ -1,0 +1,61 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	font: sans-serif;
+
+}
+
+/*---------------- Header CSS ----------------*/
+
+#header
+{
+	height: 100vh;
+	background-color: black;
+	/*--- linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0))---*/;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.user-box
+{
+	top: 50%;
+	left: 50%;
+
+	transform: translate(-50%, -50%);
+
+	position: absolute;
+
+}
+
+.user-box img
+{
+	display: block;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50%;
+	width: 250px;
+	border: 2px solid #6caed5;
+}
+
+.user-box h1
+{
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	margin: 10px;
+}
+
+.user-box p{
+	text-align: center;
+	color: #fff;
+}
+
+.ct_down{
+	text-align: center;
+	font-size: 60px;
+	margin-top: 0px;
+	color: #fff;
+}
