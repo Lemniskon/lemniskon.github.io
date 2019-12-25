@@ -11,7 +11,7 @@ body
 #header
 {
 	height: 100vh;
-	background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(img/background6.png);
+	background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(img/blue_circuit.png);
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -44,20 +44,21 @@ body
 	color: #fff;
 	font-weight: bold;
 	text-align: center;
-	margin: 10px;
+	margin: -2px;
 }
 
 .user-box h3
 {
 	color: #fff;
 	text-align: center;
-	margin: 10px;
+	margin: -2px;
 }
 
 .user-box p{
 	text-align: center;
 	font-weight: bold;
 	color: #fff;
+	margin: -2px;
 }
 
 
