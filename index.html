@@ -21,9 +21,13 @@
 	<!-- Link Font Awesome stylesheet CDN -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/
 	font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="flipclock.css">
 </head>
 
 <body>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
 	<!---------------------- HEADER SECTIONS ---------------------->
 		<section id="header">
 			<div class="container text-center">
@@ -33,36 +37,72 @@
 					<h1>Children of Yost</h1>
 					<p>The Best Student Section</p>
 					<h1>Next Game: U.S. NTDP U-18 TEAM (EX)</h1>
-					<p id="demo"></p>
-	<script>
-		var countDownDate = new Date("Jan 25, 2020 19:30:00").getTime();
-		// update every second
-		var x = setInterval(function() {
-			var now = new Date().getTime();
-			var distance = countDownDate - now;
+					<h3 id="demo"></h3>
+			<script>
+				var countDownDate = new Date("Jan 25, 2020 19:30:00").getTime();
+				// update every second
+				var x = setInterval(function() {
+					var now = new Date().getTime();
+					var distance = countDownDate - now;
 
-			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+					var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		  			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		  			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		  			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-			document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  				+ minutes + "m " + seconds + "s ";
+					document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+		  				+ minutes + "m " + seconds + "s ";
 
-			// If countdown is finished, write text
-			if (distance < 0){
-				clearInterval(x);
-				document.getElementById("demo").innterHTML = "PLAYING NOW";
-			}
-			// Display the result
-		}, 1000);
-	</script>
-				</div>
+					// If countdown is finished, write text
+					if (distance < 0){
+						clearInterval(x);
+						document.getElementById("demo").innterHTML = "PLAYING NOW";
+					}
+					// Display the result
+				}, 1000);
+			</script>
 			</div>
+		</div>
+			<!-- Scroll Button -->
+			<div class="scroll-btn" onClick="scrollToBottom">
+				<div class="scroll-bar"><a href=""><span>
+					<!--<button onClick="scrollToBottom()"></button>-->
 
-			<div class="scroll-btn">
+				</span></a></div>
+					<script>
+						scrollingElement = (document.scrollingElement || document.body);
+						function scrollToBottom(){
+							scrollingElement.scrollTop = scrollingElement.scrollHeight();
+						}
+					</script>
+		</div>
+			<!--<div class="scroll-btn">
 				<div class="scroll-bar"><a href=""><span></span></a></div>
-			</div>
+			</div>-->
+		
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<div class="clock"></div>
+
+	<script src="flipclock"></script>
+	<script type="text/javascript">
+		var clock = $('.clock').flipclock({clockFace: 'TwelveHourClock'});
+	</script>
+
+
+
 		</section>
 
 	<section id="coy-info">
@@ -103,5 +143,6 @@
 		}, 1000);
 	</script>
 </section>-->
+
 </body>
 </html>
