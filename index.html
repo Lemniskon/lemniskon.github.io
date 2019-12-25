@@ -38,31 +38,31 @@
 					<p>The Best Student Section</p>
 					<h1>Next Game: U.S. NTDP U-18 TEAM (EX)</h1>
 					<h3 id="demo"></h3>
-			<script>
-				var countDownDate = new Date("Jan 25, 2020 19:30:00").getTime();
-				// update every second
-				var x = setInterval(function() {
-					var now = new Date().getTime();
-					var distance = countDownDate - now;
+					<script>
+						var countDownDate = new Date("Jan 25, 2020 19:30:00").getTime();
+						// update every second
+						var x = setInterval(function() {
+							var now = new Date().getTime();
+							var distance = countDownDate - now;
 
-					var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		  			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		  			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		  			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+							var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				  			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				  			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				  			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-					document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-		  				+ minutes + "m " + seconds + "s ";
+							document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+				  				+ minutes + "m " + seconds + "s ";
 
-					// If countdown is finished, write text
-					if (distance < 0){
-						clearInterval(x);
-						document.getElementById("demo").innterHTML = "PLAYING NOW";
-					}
-					// Display the result
-				}, 1000);
-			</script>
+							// If countdown is finished, write text
+							if (distance < 0){
+								clearInterval(x);
+								document.getElementById("demo").innterHTML = "PLAYING NOW";
+							}
+							// Display the result
+						}, 1000);
+					</script>
+				</div>
 			</div>
-		</div>
 			<!-- Scroll Button -->
 			<div class="scroll-btn" onClick="scrollToBottom">
 				<div class="scroll-bar"><a href=""><span>
@@ -75,13 +75,29 @@
 							scrollingElement.scrollTop = scrollingElement.scrollHeight();
 						}
 					</script>
-		</div>
-			<!--<div class="scroll-btn">
-				<div class="scroll-bar"><a href=""><span></span></a></div>
-			</div>-->
-		
-	</section>
+			</div>
+		</section>
 
+		<section id="club-info">
+			<!--					NAVIGATION BAR
+			<div class="nva-bar">
+				<nav class='navbar navbar-expand-lg'>
+					<a class="navbar-brand" href="#">
+						<img src=""> 
+					</a>
+
+				</nav>
+			</div>	-->
+
+			<!-- 	CHANT SECTION	--->
+			<div class="chant container" id="chant">
+			</div>
+
+			<!--	RESEARCH SECTION 	-->
+			<div class="research container" id="research">
+			</div>
+
+		</section>
 
 
 
