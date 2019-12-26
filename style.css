@@ -110,6 +110,17 @@ i {
 }
 
 
+
+.frame
+{
+	width: 1010px;
+	height: 750px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	display: block;
+}
+
 .wrap {
   position: absolute;
   bottom: 0;
