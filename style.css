@@ -109,16 +109,74 @@ i {
 	color: #fff;
 }
 
-
-
-.frame
+.main-container
 {
-	width: 1010px;
-	height: 750px;
-	margin-left: auto;
-	margin-right: auto;
+	width: 100%;
 	overflow: hidden;
+}
+
+.left
+{
+	width: 800px;
+	height:479px; 
+	float: left;
+	background-color: #00274C;
+}
+
+.right
+{
+	margin-left: 800px;
+}
+
+img
+{
+	max-width: 100%;
+	max-height: 150%;
+}
+
+.left
+{
+	align-items: center;
+	/*justify-content: center;
+	display: flex;*/
+}
+
+.left h1
+{
+	color: #FFCB05;
+	text-align: center;
+	font-weight: bold;
+	font-size: 50px;
+}
+
+.left p{
+	color: #fff;
+	text-align: center;
+	
+}
+
+.left button
+{
+	background-color: #FFCB05;
+	border: none;
+	color: black;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
 	display: block;
+	
+	margin-top: 50px;
+	margin-bottom: 0px;
+}
+
+.btn-container
+{
+	width: 300px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 275px;
 }
 
 .wrap {
