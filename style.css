@@ -1,3 +1,10 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	font: sans-serif;
+
+}
 /*---------------- Header CSS ----------------*/
 
 #header
