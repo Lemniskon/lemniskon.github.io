@@ -143,12 +143,12 @@ img
 	max-height: 150%;
 }
 
-.left
+/*.left
 {
 	align-items: center;
 	justify-content: center;
 	display: flex;
-}
+}*/
 
 .left h1
 {
