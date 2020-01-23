@@ -129,7 +129,7 @@ i {
 
 .right
 {
-	background: 	background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(img/coy_OSU.jpg);;
+	background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(img/coy_OSU.jpg);;
 	background-image: url(img/coy_OSU.jpg);
 	float: right;
 	max-width: 100%;
