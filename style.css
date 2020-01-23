@@ -127,16 +127,13 @@ i {
 	background-color: #00274C;
 }
 
-/*.right
+.right
 {
-	background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(/img/coy_OSU.jpg);
 	background-image: url("/img/coy_OSU.JPG");
-	background-position: center right;
-	background-repeat: no-repeat;
-	background-size: cover;
-	margin-left: 800px;
-}*/
-
+	float: right;
+	max-width: 100%;
+	max-height: 150%;
+}
 img
 {
 	max-width: 100%;
