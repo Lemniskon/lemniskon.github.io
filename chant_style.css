@@ -13,6 +13,12 @@ body{
 .topnav {
 	overflow: hidden;
 	background-color: #00274c;
+
+	cursor: pointer;
+	position: relative;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	transition:all 1s;
 }
 
 .topnav a {
