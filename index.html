@@ -36,106 +36,20 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
 	<!---------------------- HEADER SECTIONS ---------------------->
-		<section id="header">
-			<div class="container text-center">
-				<div class="user-box">
-					<!---- INSERT COY IMAGE --->
-					<img src="img/coy.jpg">
-					<h1>Children of Yost</h1>
-					<p>The Best Student Section</p>
-					<h1>Next Game: U.S. NTDP U-18 TEAM (EX)</h1>
-					<h3 id="demo"></h3>
-					<script>
-						var countDownDate = new Date("Jan 25, 2020 19:30:00").getTime();
-						// update every second
-						var x = setInterval(function() {
-							var now = new Date().getTime();
-							var distance = countDownDate - now;
+		<div class="container">
 
-							var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-				  			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-				  			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-				  			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-							document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-				  				+ minutes + "m " + seconds + "s ";
-
-							// If countdown is finished, write text
-							if (distance < 0){
-								clearInterval(x);
-								document.getElementById("demo").innterHTML = "PLAYING NOW";
-							}
-							// Display the result
-						}, 1000);
-					</script>
-				</div>
-			</div>
-			<!-- Scroll Button -->
-			<div class="scroll-btn" onClick="scrollToBottom">
-				<div class="scroll-bar"><a href=""><span>
-				</span></a></div>
-					<script>
-						scrollingElement = (document.scrollingElement || document.body);
-						function scrollToBottom(){
-							scrollingElement.scrollTop = scrollingElement.scrollHeight();
-						}
-					</script>
-			</div>
-		</section>
-
-		<section id="main">
-			<div class="main-container">
-					
-				<div class="left">
-					<h1>THE CHILDREN OF YOST</h1>
-					<p> THE WEBSITE FOR THE BEST STUDENT SECTION IN THE WORLD</p>
-					<div class="btn-container">
-						<a href="chants.html" class="button">CHANTS</a>
-						
-						<p></p>
-						<button>NOTES AND SPELLING</button>
-					</div>
-				</div>
-
-				<div class="right" >
-					<img src="/img/coy_OSU.JPG" max-width: 100%; max-height: 100%; style="width: auto; height: auto;">
-			</div>
-		</section>
-
-
-		<section id="club-info">
-			<!--					NAVIGATION BAR
-			<div class="nva-bar">
-				<nav class='navbar navbar-expand-lg'>
-					<a class="navbar-brand" href="#">
-						<img src=""> 
-					</a>
-				</nav>
-			</div>	-->
-
-			<!-- 	CHANT SECTION	--->
-			<div class="box">
-				<!--<div class="chant container" id="chant">
-					<div class="csheet">-->
-						<!--<iframe class="cframe" frameborder="0" seamless="seamless" scrolling="no" display="block" align="left"
-						src=""></iframe>  INSERT SOURCE --->
-					<!--</div>
-				</div>-->
+			<div class="user-box">
+				<img src="/img/coy.jpg">
+				<h1>Chants</h1>
+				<h1>Research</h1>
+				<h1><a href="https://groupme.com/join_group/54722420/ZvOCf2rf">GroupMe</h1>
+				<h1><a href="https://www.facebook.com/groups/ChildrenOfYost/">Facebook</h1>
 			</div>
 
-			<div class="box">
-				<!--	RESEARCH SECTION 	-->
-				<!--<div class="research container" id="research">
-					<div class="rsheet">-->
-						<!--<iframe class="frame" frameborder="0" seamless="seamless" scrolling="no" display="block" align="right"
-						src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ8lJcgZkHfuGzUbABmdY-2qx0AaQ3mpacXz0NMWF3a3g1rEwa8jxWb2TXcHsjebaDVO94BeSX7j2PX/pubhtml?gid=0&single=true"></iframe>
-					</div>
-				</div>-->
+			<div class="rightImage">
+				<img src="/img/coy_OSU.JPG">
 			</div>
-
-		</section>
-
-
+		</div>
 
 </body>
 </html>

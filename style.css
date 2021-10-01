@@ -2,7 +2,7 @@ body
 {
 	margin: 0;
 	padding: 0;
-	padding-bottom: 0;
+
 	font: sans-serif;
 
 }
@@ -20,7 +20,6 @@ body
 
 .title {
 	color:#FFCB05;
-	/*font-family: dcdw;*/
 	font-style: normal;
 	font-size: 17px;
 	font-weight: 400px;
@@ -31,48 +30,73 @@ body
 
 .user-box
 {
-	top: 50%;
-	left: 50%;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	position: sticky;
+	height: 110px;
+	background-color: #00274C;
+	display: inline-block;
+	justify-content: space-between;
+}
 
-	transform: translate(-50%, -50%);
-
-	position: absolute;
-
+.user-box a
+{
+	text-decoration: none;
+	text-decoration-color: white;
+}
+.user-box a:visited
+{
+	color: white;
 }
 
 .user-box img
 {
 	display: block;
-	width: 50%;
+	margin-top: 2px;
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 50%;
-	width: 250px;
+	width: 100px;
+
+	float: left;
 	border: 2px solid #6caed5;
+	align-items: center;
+	top: 0;
+	left: 0;
 }
 
 .user-box h1
 {
+	display: inline-block;
 	color: #fff;
 	font-weight: bold;
-	text-align: center;
-	margin: -2px;
+	margin: 15px;
+	margin-top: 30px;
+
 }
 
 .user-box h3
 {
 	color: #fff;
 	text-align: center;
-	margin: -2px;
 }
 
 .user-box p{
 	text-align: center;
 	font-weight: bold;
 	color: #fff;
-	margin: -2px;
+
 }
 
+.rightImage {
+	height: 100%;
+}
+
+.spacer {
+	height: 110px;
+	width: 100%;
+}
 
 .scroll-btn
 {
