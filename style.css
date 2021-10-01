@@ -4,8 +4,9 @@ body
 	padding: 0;
 	height: 100%;
 	min-height: 100%;
-	font: sans-serif;
-	background-image: url("/img/coy_OSU.JPG") no-repeat;
+
+	background-image: url("/img/coy_OSU.JPG");
+	background-repeat: no-repeat;
 	object-fit: cover;
 	height: auto;
 	background-size: cover; 
