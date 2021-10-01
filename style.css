@@ -93,6 +93,10 @@ body
 	height: 100%;
 }
 
+.rightImage img {
+	height: 100%;
+}
+
 .spacer {
 	height: 110px;
 	width: 100%;
