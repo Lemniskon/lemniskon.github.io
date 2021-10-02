@@ -101,11 +101,12 @@ body
 }
 
 .rightImage {
-	height: 100%;
+	/*height: 100%;*/
 }
 
 .rightImage img {
-	height: 100%;
+	/*height: 100%;*/
+	object-fit: cover;
 }
 
 
