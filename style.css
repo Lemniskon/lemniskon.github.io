@@ -5,7 +5,7 @@ body
 	height: 100%;
 	min-height: 100%;
 	overflow: hidden;
-	/*background-image: url("/img/coy_OSU.JPG"), url("/img/wide.JPG");*/
+	background-image: url("/img/coy_OSU.JPG"), url("/img/wide.JPG");
 	background-repeat: no-repeat;
 	object-fit: cover;
 	height: auto;
@@ -107,4 +107,12 @@ body
 .rightImage img {
 	/*height: 100%;*/
 	object-fit: cover;
+}
+
+
+
+img
+{
+	max-width: 100%;
+	max-height: 150%;
 }
